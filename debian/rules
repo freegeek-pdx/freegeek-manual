@@ -14,3 +14,7 @@
 
 override_dh_compress:
 	dh_compress -X.pdf
+
+override_dh_fixperms:
+	$(CMD)
+	chmod +x debian/freegeek-manual/usr/share/applications/freegeek-manual.desktop
