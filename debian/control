@@ -12,5 +12,6 @@ Package: freegeek-manual
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: evince
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: freegeek manual for ubuntu 10.04
+ Documentation for basic computer usage on Ubuntu 10.04, and some Free Geek
+ specific resources.
