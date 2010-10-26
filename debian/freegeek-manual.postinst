@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+for HOMEDIR in /home/* ; do
+    USERNAME=$(basename $HOMEDIR)
+    # assume user/group matches (default on debian/ubuntu):
+    GROUPNAME="$USERNAME"
+    MANUAL_LINK=$HOMEDIR/Desktop/freegeek-manual.desktop
+    MANUAL_FILE=/usr/share/applications/freegeek-manual.desktop
+    LINK_STATE="/var/lib/freegeek-manual/homedir/$USERNAME"
+    if [ -f "$LINK_STATE" ]; then
+        # we already added the link to their home dir at some point.
+        : no-op
+    elif [ ! -h "$MANUAL_LINK" ]; then
+        # create the link, new account with no state file.
+        mkdir -p "$HOMEDIR/Desktop"
+        ln -s "$MANUAL_FILE" "$MANUAL_LINK"
+        chown -h "$USERNAME":"$GROUPNAME" "$MANUAL_LINK"
+        touch "$LINK_STATE"
+    else
+        # link is present, but state file not present- add state file.
+        # probably from a fresh home dir with a link updated from /etc/skel.
+        touch "$LINK_STATE"
+    fi
+done
+
+#DEBHELPER#
