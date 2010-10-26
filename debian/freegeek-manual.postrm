@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+case $1 in
+    purge) rm -f /var/lib/freegeek-manual/added-homedir-links ;;
+esac
+
+#DEBHELPER#
