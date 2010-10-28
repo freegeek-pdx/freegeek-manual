@@ -1,3 +1,10 @@
+freegeek-manual (1.0.1-4) freegeek-test; urgency=low
+
+  * Use Freegeek's logo.
+  * Depend on the freegeek-logo package.
+
+ -- Vagrant Cascadian <vagrant@debian.org>  Wed, 27 Oct 2010 18:48:52 -0700
+
 freegeek-manual (1.0.1-3) freegeek-test; urgency=low
 
   * only mangle home dirs on initial install, as /etc/skel will handle it

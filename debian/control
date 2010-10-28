@@ -10,7 +10,7 @@ Vcs-Browser: http://git.freegeek.org/?p=freegeek-manual.git;a=summary
 
 Package: freegeek-manual
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, freegeek-logo
 Recommends: evince
 Description: freegeek manual for ubuntu 10.04
  Documentation for basic computer usage on Ubuntu 10.04, and some Free Geek
