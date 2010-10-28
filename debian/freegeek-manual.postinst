@@ -7,6 +7,11 @@ if [ ! -f "$LINK_STATE" ]; then
     for HOMEDIR in /home/* ; do
         USERNAME=$(basename $HOMEDIR)
         # assume user/group matches (default on debian/ubuntu):
+        if ! getent passwd $USERNAME > /dev/null 2> /dev/null ; then
+            # user not defined, perhaps no home dirs yet, or lost+found dir, or
+            # who knows what.
+            continue
+        fi
         GROUPNAME="$USERNAME"
         MANUAL_LINK=$HOMEDIR/Desktop/freegeek-manual.desktop
         MANUAL_FILE=/usr/share/applications/freegeek-manual.desktop
