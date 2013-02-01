@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Freegeek Manual
 GenericName=Freegeek Manual
-Comment=Ubuntu 10.04 User Guide
-Exec=evince /usr/share/doc/freegeek-manual/Manual_v1.0.pdf
+Comment=Free Geek Xubuntu 12.04 User Guide
+Exec=evince /usr/share/doc/freegeek-manual/Manual_12.04.pdf
 Icon=FreeGeek
 Terminal=false
 Type=Application

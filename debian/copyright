@@ -4,11 +4,16 @@ This work was packaged for Debian by:
 
 It was downloaded from:
 
-    http://wiki.freegeek.org/index.php/Deadtrees
-    http://wiki.freegeek.org/images/6/66/Manual_v1.0.odt
+    http://lists.freegeek.org/pipermail/distro/attachments/20130119/19c288d7/attachment-0001.odt
 
 Upstream Authors:
 
+    Ben Koenig
+    Larry Haugen
+    Tim Peterson
+    Tanvi Garg
+    Kyle Miskell
+    Paul Munday
     Ian Young
     Luiz Sudbrack
     Shawn Furst
@@ -17,7 +22,7 @@ Upstream Authors:
 
 Copyright:
 
-    Copyright (C) 2010 Free Geek, Inc.
+    Copyright (C) 2010-2013 Free Geek, Inc.
 
 License:
 
@@ -26,7 +31,7 @@ License:
 
 The Debian packaging is:
 
-    Copyright (C) 2010 Vagrant Cascadian <vagrant@freegeek.org>
+    Copyright (C) 2010, 2013 Vagrant Cascadian <vagrant@freegeek.org>
 
 and is licensed under the GPL version 2, or any later version.
 see "/usr/share/common-licenses/GPL-2".

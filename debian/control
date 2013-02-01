@@ -2,16 +2,18 @@ Source: freegeek-manual
 Section: ubuntu/doc
 Priority: extra
 Maintainer: Vagrant Cascadian <vagrant@debian.org>
-Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends: debhelper (>= 7.0.50~), libreoffice-writer
 Standards-Version: 3.9.1
 Homepage: http://freegeek.org
 Vcs-Git: git://git.freegeek.org/git/freegeek-manual.git
 Vcs-Browser: http://git.freegeek.org/?p=freegeek-manual.git;a=summary
 
-Package: freegeek-manual
+Package: freegeek-manual-12.04
 Architecture: all
 Depends: ${misc:Depends}, freegeek-logo
+Replaces: freegeek-manual
+Breaks: freegeek-manual
 Recommends: evince
-Description: freegeek manual for ubuntu 10.04
- Documentation for basic computer usage on Ubuntu 10.04, and some Free Geek
+Description: Free Geek manual for Xubuntu 12.04
+ Documentation for basic computer usage on Xubuntu 12.04, and some Free Geek
  specific resources.
