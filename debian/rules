@@ -20,5 +20,5 @@ override_dh_fixperms:
 	chmod +x debian/freegeek-manual/usr/share/applications/freegeek-manual.desktop
 
 override_dh_auto_build:
-	libreoffice --invisible --convert-to pdf Manual_12.04.odt
+	libreoffice --headless --convert-to pdf Manual_12.04.odt
 	dh_auto_build
