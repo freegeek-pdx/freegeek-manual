@@ -18,3 +18,7 @@ override_dh_compress:
 override_dh_auto_build:
 	libreoffice --headless --convert-to pdf Manual_12.04.odt
 	dh_auto_build
+
+override_dh_clean:
+	rm -f Manual_12.04.pdf
+	dh_clean
