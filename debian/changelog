@@ -1,8 +1,10 @@
 freegeek-manual (12.04.1-1) precise; urgency=low
 
   * Upload to freegeekpdx ppa.
+  * Update Section in debian/control to "doc".
+  * Use freegeek.org email address for maintainer.
 
- -- Vagrant Cascadian <vagrant@debian.org>  Tue, 17 Dec 2013 13:05:16 -0800
+ -- Vagrant Cascadian <vagrant@freegeek.org>  Tue, 17 Dec 2013 13:38:46 -0800
 
 freegeek-manual (12.04.1-1~1) precise; urgency=low
 
